@@ -10,7 +10,11 @@ CPMAddPackage(
 
 find_package(Doxygen REQUIRED)
 
-set(DOXYGEN_INPUT_DIR "${CMAKE_SOURCE_DIR}/Source")
+if (NOT DEFINED AUTODOXY_HEADER_DIR)
+    set(AUTODOXY_HEADER_DIR "include")
+endif()
+
+set(DOXYGEN_INPUT_DIR "${CMAKE_SOURCE_DIR}/${AUTODOXY_HEADER_DIR}")
 set(DOXYGEN_OUTPUT_DIR "${CMAKE_BINARY_DIR}/docs/doxygen")
 set(DOXYGEN_INDEX_FILE "${DOXYGEN_OUTPUT_DIR}/html/index.html")
 

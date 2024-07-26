@@ -10,8 +10,11 @@ change them feel free to fork this repo for your own usage.
 
 Simply add to your main `CMakeLists.txt` file the following:
 ```
+set(AUTODOXY_HEADER_DIR "include")
 CPMAddPackage(
     GITHUB_REPOSITORY "svalorzen/AutoDoxygen"
     GIT_TAG "main"
 )
 ```
+Remember to set `AUTODOXY_HEADER_DIR` to the name of the folder (from your
+`SOURCE_DIR`) that contains the header files to document!
