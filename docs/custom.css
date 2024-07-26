@@ -1,0 +1,10 @@
+html {
+    --spacing-small: 5px;
+    --spacing-medium: 7px;
+    --spacing-large: 10px;
+
+    --tree-item-height: 20px;
+
+    --side-nav-arrow-opacity : 1;
+    --side-nav-arrow-hover-opacity : 1;
+}
